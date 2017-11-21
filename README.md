@@ -3,7 +3,7 @@ Ethereum Smart Contract for Modulum ICO.
 
 - https://modulum.io
 
-Designed on OpenZeppelin audited library https://github.com/OpenZeppelin/zeppelin-solidity
+Design based on OpenZeppelin's library for writing secure Smart Contracts on Ethereum: https://github.com/OpenZeppelin/zeppelin-solidity.
 
 ## License
 Code released under the [MIT License](https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/LICENSE).
