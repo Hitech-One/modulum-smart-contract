@@ -67,13 +67,13 @@ contract ModulumTokenICO is CappedCrowdsale, RefundableCrowdsale {
   // overriding Crowdsale#buyTokens to add a dynamic rate 
   // that will match bonus token rewards
   function buyTokens(address beneficiary) public payable {
-    if ((weiRaised < 7000 ether) && (rate != 450)) {
+    if (weiRaised < 7000 ether) {
       rate = 450;
-    } else if ((weiRaised < 17000 ether) && (rate != 360)) {
+    } else if (weiRaised < 17000 ether) {
       rate = 360;
-    } else if ((weiRaised < 34000 ether) && (rate != 330)) {
+    } else if (weiRaised < 34000 ether) {
       rate = 330;
-    } else if ((weiRaised < 51000 ether) && (rate != 315)) {
+    } else if (weiRaised < 51000 ether) {
       rate = 315;
     } else if (rate != 300) {
       rate = 300;
