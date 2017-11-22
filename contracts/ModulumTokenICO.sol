@@ -75,7 +75,7 @@ contract ModulumTokenICO is CappedCrowdsale, RefundableCrowdsale {
       rate = 330;
     } else if (weiRaised < 51000 ether) {
       rate = 315;
-    } else if (rate != 300) {
+    } else {
       rate = 300;
     }
     return super.buyTokens(beneficiary);
